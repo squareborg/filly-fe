@@ -1,0 +1,85 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Kulim+Park:400,600,700,800,900');
+
+
+
+// Tools
+@import 'sass-mq';
+//// Bootstrap
+//@import '~bootstrap/scss/bootstrap';
+//@import 'bootstrap4-switch';
+
+
+
+
+@tailwind base;
+
+// Settings
+@import "settings/settings.colours";
+@import "settings/settings.sizing";
+@import "settings/settings.typography";
+
+// Elements
+@import "elements/elements.page";
+@import "elements/elements.form";
+@import "elements/elements.typography";
+@import "elements/elements.links";
+@import "elements/elements.vue";
+
+
+
+@import "components/components.auth";
+@import "components/components.loader";
+@import "components/components.validation";
+@import "components/components.modal.auth";
+@import "components/components.xfil-card";
+@import "components/components.stat-card";
+@import "components/components.create-program";
+@import "components/components.switch";
+@import "components/components.tabs";
+
+@import "vendor/trix";
+@tailwind utilities;
+
+@import "utilities/utilities.colour";
+@import "utilities/utilities.alignment";
+@import "utilities/utilities.spacing";
+@import "utilities/utilities.sizing";
+@import "utilities/utilities.flex";
+@import "utilities/utilities.overlay";
+
+body{
+  background-color: #fbfbfb;
+
+
+  font-family: 'Kulim Park', sans-serif;
+
+
+}
+
+
+
+
+.navbar-laravel {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+thead {
+  background-color: #f4f4f4;
+  color: black;
+}
+
+.btn-primary, .btn-primary:hover {
+  background-color: config('colors.brand-green-light')
+}
+
+.btn-secondary, .btn-secondary:hover {
+  background-color: config('colors.brand-green-dark')
+}
+
+// .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+//     color: #fff;
+//     background-color: #37a3eb;
+// }
